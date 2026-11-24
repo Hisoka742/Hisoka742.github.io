@@ -561,12 +561,14 @@ class Piece {
     this.mat.iridescence = .55 + .45 * this.h;
     this.mat.envMapIntensity = 1 + .9 * this.h;
 
-    const tau = p * T_PHYS, g = -2800 * S * (L.phone ? 1.4 : 1);
+    if (CALM) p = clamp(p, 0, 1);
+    const k = CALM ? .06 : 1;
+    const tau = p * T_PHYS * k, g = -2800 * S * (L.phone ? 1.4 : 1) * k;
     this.group.position.set(this.rest.x + this.v.x * tau, this.rest.y + this.v.y * tau + .5 * g * tau * tau, this.v.z * tau + this.lift);
-    _q.setFromAxisAngle(this.axis, this.ang * p);
+    _q.setFromAxisAngle(this.axis, this.ang * p * k);
     _q2.setFromEuler(_e.set(this.rx, this.ry, 0));
     this.group.quaternion.copy(_q).multiply(_q2);
-    const op = p > .72 ? clamp(1 - (p - .72) / .28, 0, 1) : 1;
+    const op = CALM ? 1 - p : p > .72 ? clamp(1 - (p - .72) / .28, 0, 1) : 1;
     this.mat.opacity = op; this.pmat.opacity = op;
     this.group.visible = p < .999;
   }
@@ -956,7 +958,11 @@ async function loadFonts() {
   await Promise.race([Promise.all(want), new Promise(r => setTimeout(r, 3000))]).catch(() => {});
 }
 
-export async function start() {
+// calm: the visitor asked for reduced motion. Pieces only separate slightly and cross-fade.
+let CALM = false;
+
+export async function start({ calm = false } = {}) {
+  CALM = calm;
   await loadFonts();
   renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
   renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));

@@ -6,12 +6,13 @@ function hasWebGL2() {
 
 const params = new URLSearchParams(location.search);
 const forceStatic = params.has('static');
-// ?motion forces the WebGL version even when the OS asks for reduced motion
-const reduceMotion = !params.has('motion') && matchMedia('(prefers-reduced-motion: reduce)').matches;
+// Reduced motion keeps the glass but swaps the shatter for a gentle cross-fade.
+// ?motion forces the full shatter anyway.
+const calm = !params.has('motion') && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-if (forceStatic || reduceMotion || !hasWebGL2()) renderStatic();
+if (forceStatic || !hasWebGL2()) renderStatic();
 else {
   import('./glass.js')
-    .then(m => m.start())
+    .then(m => m.start({ calm }))
     .catch(err => { console.error(err); renderStatic(); });
 }
