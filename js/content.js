@@ -5,7 +5,7 @@ export const PROFILE = {
   telegram: 'jus_039',
   github: 'Hisoka742',
   // Paste full profile URLs here once they exist; they appear on the Contact page automatically.
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/in/salman-atmania',
   hh: '',
   cv: 'assets/cv-salman-atmania.pdf',
   certificates: 'https://github.com/Hisoka742/ONLINE-CERTIFICATES',
