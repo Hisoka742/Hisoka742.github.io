@@ -1,0 +1,411 @@
+// All site text lives here (English + Russian). Edit freely: layout adapts to text length.
+
+export const PROFILE = {
+  email: 'atmaniaslmane@gmail.com',
+  telegram: 'jus_039',
+  github: 'Hisoka742',
+  // Paste full profile URLs here once they exist; they appear on the Contact page automatically.
+  linkedin: '',
+  hh: '',
+  cv: 'assets/cv-salman-atmania.pdf',
+  certificates: 'https://github.com/Hisoka742/ONLINE-CERTIFICATES',
+};
+
+export const T = {
+  en: {
+    fullName: 'Salman El Farissi Atmania',
+    nameLines: ['Salman El Farissi', 'Atmania.'],
+    short: 'Salman Atmania',
+    nav: { work: 'Work', skills: 'Skills', contact: 'Contact', cv: 'CV ↓' },
+    back: '← Back',
+    proj: { project: 'Project', case: 'Case study →', demo: 'Live demo', github: 'GitHub ↗', prev: '← Prev', next: 'Next →', how: 'how it works.' },
+    home: {
+      title: 'ML / NLP / Agentic AI',
+      eyebrow: 'ML · NLP · Agentic AI — SPbU, class of 2027',
+      sub: '4th-year AI & Data Science student at Saint Petersburg State University. I build LLM pipelines, RAG systems and autonomous agents, and I measure whether they actually help.',
+      cta: 'View work',
+      link: 'Skills & education →',
+      featEyebrow: 'Featured project',
+      featText: 'LLM features vs. a credit-risk model: 125,700 loans, an honest negative result and a live service.',
+      featLink: 'Open project →',
+      footL: '© 2026 Salman El Farissi Atmania',
+      footR: 'Open to internships · ML · NLP · Data Science · GenAI · Agents',
+    },
+    work: {
+      eyebrow: 'Selected work · 2025–2026',
+      lines: ['Selected', 'work.'],
+      sub: 'Seven projects, from reproducible research with honest negative results to services with real users.',
+      footL: '← Home',
+      footR: 'Start with 01 →',
+    },
+    skills: {
+      eyebrow: 'Skills & education',
+      lines: ['Tools I', 'work with.'],
+      about: 'I study Artificial Intelligence and Data Science at SPbU (2023–2027). Hands-on with NLP, RAG architectures, agentic systems and FastAPI backends. I took a credit-scoring study with LLM features all the way to a working GigaChat-based service, and I have shipped GigaChat API features to real users.',
+      link: 'Education & certificates →',
+      footL: 'SPbU · BSc AI & Data Science · 2023–2027',
+      footR: 'Russian (fluent) · English (professional) · Arabic (native)',
+      groups: [
+        { t: 'NLP & LLMs', d: 'LangChain, RAG, GigaChat API, OpenAI API, vLLM, Hugging Face, Sentence-Transformers, BERT, prompt engineering, structured output (JSON + pydantic)' },
+        { t: 'ML & model evaluation', d: 'CatBoost, XGBoost, scikit-learn, PyTorch (basic fine-tuning), TF-IDF, PCA, KMeans; out-of-time validation, bootstrap intervals, calibration, PSI, SHAP' },
+        { t: 'AI agents', d: 'ReAct tool-calling loops, offline agents on local LLMs via OpenAI-compatible APIs, benchmarks for LLM agents' },
+        { t: 'Retrieval & vector DBs', d: 'FAISS, ChromaDB, semantic search' },
+        { t: 'Backend & infrastructure', d: 'FastAPI, Redis, Docker, PostgreSQL (basic), pytest, Git / GitHub, Linux (basic)' },
+        { t: 'Programming', d: 'Python (advanced), SQL, C/C++ (basic)' },
+      ],
+      reader: {
+        title: 'Education, courses and certificates.',
+        paras: [
+          { t: 'Education', d: 'Saint Petersburg State University (SPbU), 2023–2027. BSc programme “Artificial Intelligence and Data Science”, 4th year. Courses: machine learning, LLMs, statistics, algorithms, mathematics for AI.' },
+          { t: 'Community', d: 'Data Dojo, an offline meetup of the Yandex ML community (Saint Petersburg, September 2026): technical talks, poster sessions, career consultations.' },
+          { t: 'Machine learning', d: 'Machine Learning (Coursera). Supervised Machine Learning: Regression and Classification, and Advanced Learning Algorithms (DeepLearning.AI & Stanford Online).' },
+          { t: 'Large language models', d: 'Large Language Models (Coursera).' },
+          { t: 'Algorithms', d: 'Algorithms: theory and practice. Data structures (Stepik / Computer Science Center): 100%, with distinction.' },
+          { t: 'Programming', d: 'Programming for Everybody, Getting Started with Python (University of Michigan). C for Everyone, Part 1 & 2 (University of California, Santa Cruz, 2022).' },
+          { t: 'Languages', d: 'Russian (fluent), English (professional), Arabic (native).' },
+        ],
+        links: [{ label: 'All certificates ↗', key: 'certificates' }],
+      },
+    },
+    contact: {
+      eyebrow: 'Contact',
+      lines: ['Let’s', 'talk.'],
+      sub: 'I am looking for an internship in machine learning, NLP, data science, AI agents or generative AI, in Saint Petersburg or remote.',
+      cta: 'Write an email',
+      link: 'Download CV →',
+      footL: '© 2026 Salman El Farissi Atmania',
+      footR: 'Saint Petersburg · UTC+3',
+    },
+  },
+
+  ru: {
+    fullName: 'Салман Эль Фарисси Атмания',
+    nameLines: ['Салман Эль Фарисси', 'Атмания.'],
+    short: 'Салман Атмания',
+    nav: { work: 'Проекты', skills: 'Навыки', contact: 'Контакты', cv: 'Резюме ↓' },
+    back: '← Назад',
+    proj: { project: 'Проект', case: 'Подробнее →', demo: 'Демо', github: 'GitHub ↗', prev: '← Пред.', next: 'След. →', how: 'как это устроено.' },
+    home: {
+      title: 'ML / NLP / агентный ИИ',
+      eyebrow: 'ML · NLP · агентный ИИ — СПбГУ, выпуск 2027',
+      sub: 'Студент 4 курса программы «Искусственный интеллект и наука о данных» СПбГУ. Строю LLM-пайплайны, RAG-системы и автономных агентов — и честно измеряю, помогают ли они.',
+      cta: 'Смотреть проекты',
+      link: 'Навыки и образование →',
+      featEyebrow: 'Главный проект',
+      featText: 'LLM-признаки в модели кредитного риска: 125 700 кредитов, честный отрицательный результат и работающий сервис.',
+      featLink: 'Открыть проект →',
+      footL: '© 2026 Салман Эль Фарисси Атмания',
+      footR: 'Ищу стажировку · ML · NLP · Data Science · GenAI · агенты',
+    },
+    work: {
+      eyebrow: 'Избранные проекты · 2025–2026',
+      lines: ['Избранные', 'проекты.'],
+      sub: 'Семь проектов: от воспроизводимых исследований с честными отрицательными результатами до сервисов с реальными пользователями.',
+      footL: '← На главную',
+      footR: 'Начать с 01 →',
+    },
+    skills: {
+      eyebrow: 'Навыки и образование',
+      lines: ['Чем я', 'работаю.'],
+      about: 'Учусь в СПбГУ по программе «Искусственный интеллект и наука о данных» (2023–2027). Практический опыт в NLP, RAG-архитектурах, агентных системах и backend-разработке на FastAPI. Довёл исследование по кредитному скорингу с LLM-признаками до работающего сервиса на GigaChat API и работал с GigaChat API в продукте с реальными пользователями.',
+      link: 'Образование и сертификаты →',
+      footL: 'СПбГУ · ИИ и наука о данных · 2023–2027',
+      footR: 'Русский (свободно) · английский (проф.) · арабский (родной)',
+      groups: [
+        { t: 'NLP и LLM', d: 'LangChain, RAG, GigaChat API, OpenAI API, vLLM, Hugging Face, Sentence-Transformers, BERT, prompt engineering, структурированный вывод (JSON + pydantic)' },
+        { t: 'ML и оценка моделей', d: 'CatBoost, XGBoost, scikit-learn, PyTorch (базовый fine-tuning), TF-IDF, PCA, KMeans; out-of-time валидация, бутстреп-интервалы, калибровка, PSI, SHAP' },
+        { t: 'AI-агенты', d: 'ReAct-циклы вызова инструментов, офлайн-агенты на локальных LLM через OpenAI-совместимые API, бенчмарки для LLM-агентов' },
+        { t: 'Поиск и векторные БД', d: 'FAISS, ChromaDB, семантический поиск' },
+        { t: 'Backend и инфраструктура', d: 'FastAPI, Redis, Docker, PostgreSQL (базовый), pytest, Git / GitHub, Linux (базовый)' },
+        { t: 'Языки программирования', d: 'Python (продвинутый), SQL, C/C++ (базовый)' },
+      ],
+      reader: {
+        title: 'Образование, курсы и сертификаты.',
+        paras: [
+          { t: 'Образование', d: 'Санкт-Петербургский государственный университет (СПбГУ), 2023–2027. Бакалавриат «Искусственный интеллект и наука о данных», 4 курс. Курсы: машинное обучение, LLM, статистика, алгоритмы, математика для ИИ.' },
+          { t: 'Сообщество', d: 'Data Dojo — офлайн-встреча ML-сообщества Яндекса (Санкт-Петербург, сентябрь 2026): технические доклады, постерные сессии, карьерные консультации.' },
+          { t: 'Машинное обучение', d: 'Machine Learning (Coursera). Supervised Machine Learning: Regression and Classification и Advanced Learning Algorithms (DeepLearning.AI & Stanford Online).' },
+          { t: 'Большие языковые модели', d: 'Large Language Models (Coursera).' },
+          { t: 'Алгоритмы', d: 'Алгоритмы: теория и практика. Структуры данных (Stepik / Computer Science Center): 100%, с отличием.' },
+          { t: 'Программирование', d: 'Programming for Everybody, Getting Started with Python (University of Michigan). C for Everyone, Part 1 & 2 (University of California, Santa Cruz, 2022).' },
+          { t: 'Языки', d: 'Русский (свободно), английский (профессиональный), арабский (родной).' },
+        ],
+        links: [{ label: 'Все сертификаты ↗', key: 'certificates' }],
+      },
+    },
+    contact: {
+      eyebrow: 'Контакты',
+      lines: ['Давайте', 'поговорим.'],
+      sub: 'Ищу стажировку в машинном обучении, NLP, data science, AI-агентах или генеративном ИИ — в Санкт-Петербурге или удалённо.',
+      cta: 'Написать письмо',
+      link: 'Скачать резюме →',
+      footL: '© 2026 Салман Эль Фарисси Атмания',
+      footR: 'Санкт-Петербург · UTC+3',
+    },
+  },
+};
+
+export const PROJECTS = [
+  {
+    id: 'llm-credit-risk-lab',
+    year: '2026',
+    repo: 'https://github.com/Hisoka742/llm-credit-risk-lab',
+    demo: 'https://hisoka742.github.io/llm-credit-risk-lab',
+    stack: 'Python · CatBoost · vLLM · Sentence-Transformers · GigaChat API · FastAPI · pydantic · pytest · Docker · React',
+    metrics: [
+      { v: { en: '125,700', ru: '125 700' }, en: 'loans, out-of-time split', ru: 'кредитов, разбиение по времени' },
+      { v: { en: '99.97%', ru: '99,97%' }, en: 'valid JSON from Qwen2.5-7B', ru: 'валидных JSON от Qwen2.5-7B' },
+      { v: '103', en: 'automated tests, incl. leakage', ru: 'автотеста, включая утечки' },
+    ],
+    en: {
+      title: 'LLM Credit Risk Lab',
+      kind: 'Research + live service',
+      tagline: 'Do LLM features from a borrower’s free text improve a default-probability model? A reproducible study on 125,700 Lending Club loans, taken all the way to a live service.',
+      case: [
+        { t: 'Question', d: 'Can structured LLM features or text embeddings of the loan description add signal on top of tabular credit data?' },
+        { t: 'Data', d: '125,700 Lending Club loans, split by issue date (out-of-time). Five experiments with identical CatBoost settings: tabular features, text embeddings (bge-small + PCA), structured LLM features, their combination and a TF-IDF baseline.' },
+        { t: 'LLM extraction', d: '8 JSON features from 116k descriptions with Qwen2.5-7B on vLLM (Kaggle T4): pydantic validation, retries, disk cache. 99.97% valid answers at 0.46 GPU-seconds per application.' },
+        { t: 'Result', d: 'An honest negative result: Gini +0.004 for embeddings (p = 0.079) and +0.001 for LLM features (p = 0.254), not significant under a paired bootstrap with 1,000 resamples. Also checked: calibration, PSI, Gini by quarter, SHAP and a review of 20 disputed cases.' },
+        { t: 'Leakage control', d: 'Named lists of 39 forbidden and 109 allowed columns; 103 automated tests, including one that fails if a post-fact feature ever reaches the training matrix.' },
+        { t: 'Live demo', d: 'A FastAPI service reads the text through GigaChat-2-Max and recomputes PD with the trained model: OAuth tokens, rate limiting, Docker, deployed on Render; bilingual React site.' },
+      ],
+    },
+    ru: {
+      title: 'LLM Credit Risk Lab',
+      kind: 'Исследование + сервис',
+      tagline: 'Улучшают ли LLM-признаки из текста заёмщика модель вероятности дефолта? Воспроизводимое исследование на 125 700 кредитах Lending Club, доведённое до работающего сервиса.',
+      case: [
+        { t: 'Вопрос', d: 'Добавляют ли структурированные LLM-признаки или эмбеддинги текста заявки сигнал поверх табличных данных о заёмщике?' },
+        { t: 'Данные', d: '125 700 кредитов Lending Club, разбиение по дате выдачи (out-of-time). Пять экспериментов с одинаковыми настройками CatBoost: табличные признаки, эмбеддинги текста (bge-small + PCA), структурированные признаки LLM, их комбинация и TF-IDF-бейзлайн.' },
+        { t: 'Извлечение', d: '8 JSON-признаков из 116 тыс. описаний моделью Qwen2.5-7B на vLLM (Kaggle T4): валидация pydantic, повторные запросы, дисковый кэш. 99,97% валидных ответов, 0,46 GPU-секунды на заявку.' },
+        { t: 'Результат', d: 'Честный отрицательный результат: прирост Gini +0,004 для эмбеддингов (p = 0,079) и +0,001 для LLM-признаков (p = 0,254) статистически незначим (парный бутстреп, 1000 выборок). Дополнительно: калибровка, PSI, Gini по кварталам, SHAP и разбор 20 спорных случаев.' },
+        { t: 'Контроль утечек', d: 'Поимённые списки 39 запрещённых и 109 разрешённых колонок; 103 автотеста, включая тест, который падает при попадании пост-фактум признака в матрицу.' },
+        { t: 'Демо', d: 'Сервис на FastAPI читает текст через GigaChat-2-Max и пересчитывает PD обученной моделью: OAuth-токены, rate limiting, Docker, деплой на Render; двуязычный сайт на React.' },
+      ],
+    },
+  },
+  {
+    id: 'offline-security-agent',
+    year: '2026',
+    repo: '',
+    demo: '',
+    stack: 'Python (stdlib + openai SDK) · local LLM · Harbor · Docker · WSL2 · ripgrep',
+    metrics: [
+      { v: 'ReAct', en: 'tool-calling loop with a time budget', ru: 'цикл вызова инструментов с тайм-бюджетом' },
+      { v: '0', en: 'internet access: local LLM only', ru: 'доступа в интернет: только локальная LLM' },
+      { v: { en: '12 KB', ru: '12 КБ' }, en: 'solution under the Harbor contract', ru: 'решение под контракт Harbor' },
+    ],
+    en: {
+      title: 'Offline Security Agent',
+      kind: 'Agentic AI · AI Challenge 2026',
+      tagline: 'An autonomous agent that hunts vulnerabilities, does forensics, writes SWE-bench-style patches and solves CTFs on a local LLM with no internet. Main stage of AI Challenge 2026 (Alliance in AI × Sber), cybersecurity case with AIRI.',
+      case: [
+        { t: 'Context', d: 'Student track of AI Challenge 2026 by the Alliance in AI and Sber, team entry. Qualified through “I’ll Come Back Later” (user-return prediction, passed) and “Lighting Level” (illumination estimation from images); main stage: the cybersecurity case with AIRI.' },
+        { t: 'Agent loop', d: 'ReAct-style tool calling with a time budget, stagnation detection, recovery from malformed tool calls and history compression for long trajectories.' },
+        { t: 'Tools', d: 'Shell; file reading and editing with protection against ambiguous patches; search via ripgrep with a grep fallback; output truncation and spilling large logs to disk.' },
+        { t: 'Constraints', d: 'Fully offline: a local LLM behind an OpenAI-compatible endpoint, no internet access.' },
+        { t: 'Testing', d: 'Packed into a 12 KB solution under the Harbor contract and tested offline with a mock client and unit tests on a local Harbor + Docker + WSL2 bench.' },
+      ],
+    },
+    ru: {
+      title: 'Офлайн-агент кибербезопасности',
+      kind: 'Агентный ИИ · AI Challenge 2026',
+      tagline: 'Автономный агент, который ищет уязвимости, проводит форензику, пишет патчи в стиле SWE-bench и решает CTF на локальной LLM без интернета. Основной этап AI Challenge 2026 (Альянс в сфере ИИ × Сбер), кейс «Кибербезопасность» совместно с AIRI.',
+      case: [
+        { t: 'Контекст', d: 'Трек «Студенты» AI Challenge 2026 от Альянса в сфере ИИ и Сбера, командное участие. Квалификация: «I’ll Come Back Later» (предсказание возврата пользователя, зачёт пройден) и «Lighting Level» (оценка освещённости по изображениям); основной этап — кейс «Кибербезопасность» совместно с AIRI.' },
+        { t: 'Цикл агента', d: 'ReAct-цикл вызова инструментов: тайм-бюджет, детекция стагнации, восстановление после некорректных tool-call, сжатие истории для длинных траекторий.' },
+        { t: 'Инструменты', d: 'Shell; чтение и правка файлов с защитой от неоднозначных патчей; поиск через ripgrep с grep-фолбэком; усечение вывода и сброс больших логов на диск.' },
+        { t: 'Ограничения', d: 'Полностью офлайн: локальная LLM через OpenAI-совместимый эндпоинт, без доступа в интернет.' },
+        { t: 'Тестирование', d: 'Решение под контракт Harbor (12 КБ), протестировано офлайн на мок-клиенте и юнит-тестах на локальном стенде Harbor + Docker + WSL2.' },
+      ],
+    },
+  },
+  {
+    id: 'stm-depth-bench',
+    year: '2026',
+    repo: 'https://github.com/Hisoka742/stm-depth-bench',
+    demo: '',
+    stack: 'Python · OpenRouter · LLM-based coherence checks · Russian-language dialogue data',
+    metrics: [
+      { v: '54 + 30', en: 'scenarios: main set + pilot', ru: 'сценариев: основной набор + пилот' },
+      { v: '3', en: 'ways to ask for depth k', ru: 'способа задать глубину k' },
+      { v: '10', en: 'markup rules checked per scenario', ru: 'правил проверки разметки' },
+    ],
+    en: {
+      title: 'stm-depth-bench',
+      kind: 'LLM-agent evaluation',
+      tagline: '“What was the transfer amount before the last change?” A benchmark generator that tests whether an LLM agent can pick the right version of a fact that changed several times in one conversation, not only the current one.',
+      case: [
+        { t: 'Idea', d: 'Most memory benchmarks only ask for the current value. Here a fact goes through a chain v1 → … → vn, and the model is asked for the version at depth k: the correct answer is v(n−k).' },
+        { t: 'Setting', d: 'Russian dialogues between a bank client and an assistant: the client keeps changing a payment date, a transfer amount, a phone number for notifications.' },
+        { t: 'Depth', d: 'Asked three ways: ordinal (“the third one”, “two changes ago”), relative (“the original”, “the previous one”) and via an event (“before I said my relatives had already helped”).' },
+        { t: 'Generator', d: 'Independently varies depth, how it is asked, chain length, type of change, the number of same-type distractor facts and the memory format (dialogue log or fact list). Covers corrections, mentions that are not records, implicit two-turn updates and requests to forget a value, where the correct answer is a refusal.' },
+        { t: 'Quality', d: 'Every scenario must pass 10 markup rules and then an LLM check of dialogue coherence; models are run through OpenRouter.' },
+      ],
+    },
+    ru: {
+      title: 'stm-depth-bench',
+      kind: 'Оценка LLM-агентов',
+      tagline: '«Какая сумма перевода была до последнего изменения?» Генератор бенчмарка, который проверяет, умеет ли LLM-агент выбрать нужную версию многократно менявшегося сведения — не только текущую, но и любую прежнюю.',
+      case: [
+        { t: 'Идея', d: 'Существующие бенчмарки почти всегда спрашивают только текущее значение. Здесь сведение проходит цепочку версий v1 → … → vn, и модель спрашивают о версии на глубине k: правильный ответ — v(n−k).' },
+        { t: 'Сеттинг', d: 'Русскоязычные диалоги клиента с ассистентом банка: клиент несколько раз переносит дату платежа, исправляет сумму перевода, меняет номер для уведомлений.' },
+        { t: 'Глубина', d: 'Задаётся тремя способами: порядковый («третьей по счёту», «два изменения назад»), относительный («первоначальная», «предыдущая») и через событие («до того, как я сказал, что брату уже помогли родственники»).' },
+        { t: 'Генератор', d: 'Независимо меняет глубину, способ её задания, длину цепочки, вид изменения, число однотипных сведений-помех и формат памяти (лог диалога или список фактов). Есть исправления, упоминания, не являющиеся записью, неявные обновления в два хода и просьбы забыть значение, где правильный ответ — отказ.' },
+        { t: 'Качество', d: 'Каждый сценарий проходит 10 правил проверки разметки и LLM-проверку связности диалогов; модели запускаются через OpenRouter.' },
+      ],
+    },
+  },
+  {
+    id: 'enterprise-rag',
+    year: '2026',
+    repo: 'https://github.com/Hisoka742/enterprise-rag-atmania',
+    demo: '',
+    stack: 'Python · LangChain · Sentence-Transformers · FAISS · ChromaDB · OpenAI API',
+    metrics: [
+      { v: 'FAISS', en: '+ ChromaDB vector search', ru: '+ ChromaDB, векторный поиск' },
+      { v: { en: 'Tuned', ru: 'Подбор' }, en: 'chunk size and overlap', ru: 'размера и перекрытия чанков' },
+      { v: { en: '2 stages', ru: '2 этапа' }, en: 'retrieval split from generation', ru: 'retrieval отделён от generation' },
+    ],
+    en: {
+      title: 'Enterprise RAG Challenge',
+      kind: 'RAG pipeline',
+      tagline: 'An end-to-end retrieval-augmented generation pipeline over complex corporate documents and tables, built so that answers come from sources rather than from the model’s imagination.',
+      case: [
+        { t: 'Pipeline', d: 'Sentence-Transformers embeddings → FAISS / ChromaDB → LangChain → LLM.' },
+        { t: 'Documents', d: 'Data extraction from complex documents and tables.' },
+        { t: 'Retrieval', d: 'Chunk size and overlap tuned for the document set.' },
+        { t: 'Hallucinations', d: 'Retrieval and generation are kept as separate stages, so every answer can be traced back to the retrieved context.' },
+        { t: 'Evaluation', d: 'Pipeline quality evaluated end to end.' },
+      ],
+    },
+    ru: {
+      title: 'Enterprise RAG Challenge',
+      kind: 'RAG-пайплайн',
+      tagline: 'End-to-end RAG-пайплайн по сложным корпоративным документам и таблицам: ответы строятся на найденных источниках, а не на фантазии модели.',
+      case: [
+        { t: 'Пайплайн', d: 'Эмбеддинги Sentence-Transformers → FAISS / ChromaDB → LangChain → LLM.' },
+        { t: 'Документы', d: 'Извлечение данных из сложных документов и таблиц.' },
+        { t: 'Поиск', d: 'Подбор размера и перекрытия чанков под набор документов.' },
+        { t: 'Галлюцинации', d: 'Retrieval и generation разделены, поэтому каждый ответ можно проследить до найденного контекста.' },
+        { t: 'Оценка', d: 'Оценка качества пайплайна от начала до конца.' },
+      ],
+    },
+  },
+  {
+    id: 'nutriforge-ai',
+    year: '2025–26',
+    repo: 'https://github.com/Hisoka742/nutriforge-ai',
+    demo: '',
+    stack: 'Python · FastAPI · scikit-learn · XGBoost · LangChain · React · SQLite · Groq API',
+    metrics: [
+      { v: '4', en: 'ML models (XGBoost, scikit-learn)', ru: 'ML-модели (XGBoost, scikit-learn)' },
+      { v: '7', en: 'FastAPI routers with JWT auth', ru: 'роутеров FastAPI с JWT' },
+      { v: '70B', en: 'LLaMA 3.3 chat via Groq', ru: 'LLaMA 3.3 в чате через Groq' },
+    ],
+    en: {
+      title: 'NutriForge AI',
+      kind: 'Full-stack ML',
+      tagline: 'A fitness and nutrition platform: four ML models trained on Kaggle data behind a FastAPI backend, an LLM chat assistant and a React frontend.',
+      case: [
+        { t: 'Models', d: 'Four models for calories, macronutrients, health risk and workout intensity, trained on Kaggle datasets with XGBoost and scikit-learn.' },
+        { t: 'Data', d: 'Cleaning, feature engineering and SMOTE to balance classes.' },
+        { t: 'Backend', d: 'REST API on FastAPI with JWT authentication and 7 routers; SQLite storage.' },
+        { t: 'AI chat', d: 'A chat assistant on Groq LLaMA 3.3 70B.' },
+        { t: 'Frontend', d: 'React.' },
+      ],
+    },
+    ru: {
+      title: 'NutriForge AI',
+      kind: 'Full-stack ML',
+      tagline: 'Фитнес-платформа: четыре ML-модели на датасетах Kaggle за бэкендом на FastAPI, AI-чат на LLM и фронтенд на React.',
+      case: [
+        { t: 'Модели', d: 'Четыре модели: калории, макронутриенты, риск для здоровья и интенсивность тренировок; XGBoost и scikit-learn на датасетах Kaggle.' },
+        { t: 'Данные', d: 'Очистка данных, feature engineering, SMOTE для балансировки классов.' },
+        { t: 'Backend', d: 'REST API на FastAPI с JWT-аутентификацией и 7 роутерами; хранение в SQLite.' },
+        { t: 'AI-чат', d: 'Чат-ассистент на Groq LLaMA 3.3 70B.' },
+        { t: 'Frontend', d: 'React.' },
+      ],
+    },
+  },
+  {
+    id: 'shorsa-ai',
+    year: '2025',
+    repo: 'https://github.com/Hisoka742/ai_gen_bot',
+    demo: '',
+    stack: 'Python · FastAPI · GigaChat API · Redis · Telegram Bot API',
+    metrics: [
+      { v: 'Live', en: 'product with real users', ru: 'продукт с реальными пользователями' },
+      { v: 'GigaChat', en: 'API for image generation', ru: 'API генерации изображений' },
+      { v: 'Redis', en: 'rate limiting & credit billing', ru: 'rate limiting и биллинг' },
+    ],
+    en: {
+      title: 'Shorsa AI',
+      kind: 'GenAI product · Telegram',
+      tagline: 'A Telegram bot that turns text prompts into images through Sber’s GigaChat API: a small product with real users, rate limits and credit-based billing.',
+      case: [
+        { t: 'Product', d: 'A Telegram bot for image generation, used by real users.' },
+        { t: 'Generation', d: 'GigaChat API (Sber) turns text prompts into images.' },
+        { t: 'Backend', d: 'FastAPI + Redis REST API.' },
+        { t: 'Limits & billing', d: 'Rate limiting and credit-based billing so usage stays fair and costs stay predictable.' },
+      ],
+    },
+    ru: {
+      title: 'Shorsa AI',
+      kind: 'GenAI-продукт · Telegram',
+      tagline: 'Telegram-бот, который превращает текстовые запросы в изображения через GigaChat API (Сбер): небольшой продукт с реальными пользователями, лимитами и биллингом на кредитах.',
+      case: [
+        { t: 'Продукт', d: 'Telegram-бот для генерации изображений с реальными пользователями.' },
+        { t: 'Генерация', d: 'GigaChat API (Сбер) создаёт изображения по текстовым запросам.' },
+        { t: 'Backend', d: 'REST API на FastAPI + Redis.' },
+        { t: 'Лимиты и биллинг', d: 'Rate limiting и биллинг на кредитах: честное распределение нагрузки и предсказуемые расходы.' },
+      ],
+    },
+  },
+  {
+    id: 'writing-styles-big-five',
+    year: '2025',
+    repo: 'https://github.com/Hisoka742/Project_work_3_sem',
+    demo: '',
+    stack: 'Python · Hugging Face Transformers · scikit-learn · UMAP · Pandas',
+    metrics: [
+      { v: 'BERT', en: 'embeddings of Russian texts', ru: 'эмбеддинги русских текстов' },
+      { v: 'UMAP', en: '+ PCA dimensionality reduction', ru: '+ PCA, снижение размерности' },
+      { v: 'KMeans', en: 'interpretable user clusters', ru: 'интерпретируемые кластеры' },
+    ],
+    en: {
+      title: 'Writing Styles & Big Five',
+      kind: 'NLP research',
+      tagline: 'Unsupervised NLP on Russian social-media texts: finding latent writing styles and relating them to Big Five personality traits.',
+      case: [
+        { t: 'Goal', d: 'Use unsupervised learning to find latent styles of written communication among social-media users and study how they relate to Big Five personality traits.' },
+        { t: 'Pipeline', d: 'BERT embeddings of Russian-language texts → PCA / UMAP → KMeans.' },
+        { t: 'Output', d: 'Interpretable user clusters and their visualisation.' },
+      ],
+    },
+    ru: {
+      title: 'Стили письма и Big Five',
+      kind: 'NLP-исследование',
+      tagline: 'Обучение без учителя на русскоязычных текстах соцсетей: поиск скрытых стилей письма и их связь с чертами личности по модели «Большой пятёрки».',
+      case: [
+        { t: 'Цель', d: 'Методами обучения без учителя выявить скрытые стили письменной коммуникации пользователей соцсетей и исследовать их связь с чертами «Большой пятёрки».' },
+        { t: 'Пайплайн', d: 'BERT-эмбеддинги русскоязычных текстов → PCA / UMAP → KMeans.' },
+        { t: 'Результат', d: 'Интерпретируемые кластеры пользователей и их визуализация.' },
+      ],
+    },
+  },
+];
+
+export function contactRows() {
+  const strip = u => u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+  const rows = [
+    { label: 'Email', value: PROFILE.email, href: 'mailto:' + PROFILE.email },
+    { label: 'Telegram', value: '@' + PROFILE.telegram, href: 'https://t.me/' + PROFILE.telegram, ext: true },
+    { label: 'GitHub', value: 'github.com/' + PROFILE.github, href: 'https://github.com/' + PROFILE.github, ext: true },
+  ];
+  if (PROFILE.linkedin) rows.push({ label: 'LinkedIn', value: strip(PROFILE.linkedin), href: PROFILE.linkedin, ext: true });
+  if (PROFILE.hh) rows.push({ label: 'hh.ru', value: strip(PROFILE.hh), href: PROFILE.hh, ext: true });
+  return rows;
+}
+
+export const metricValue = (m, lang) => (typeof m.v === 'string' ? m.v : m.v[lang]);
